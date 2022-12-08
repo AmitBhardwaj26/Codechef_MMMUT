@@ -67,34 +67,34 @@ const user = new usermodel({
 
 //requests
 app.get("/", async function (req, res) {
-  res.sendFile("/Html/Verificationhome.html");
+  res.sendFile(__dirname + "/Html/Verificationhome.html");
 });
 
 app.get("/AdminLogin", function (req, res) {
-  res.sendFile("/Html/AdminLogin.html");
+  res.sendFile(__dirname + "/Html/AdminLogin.html");
 });
 
 app.get("/VerificationusingRollno", async function (req, res) {
-  res.sendFile("/Html/VerificationusingRollno.html");
+  res.sendFile(__dirname + "/Html/VerificationusingRollno.html");
 });
 
 app.get("/Add", function (req, res) {
-  res.sendFile("/Html/Add.html");
+  res.sendFile(__dirname + "/Html/Add.html");
 });
 
 // Update the data
 app.get("/Update", function (req, res) {
-  res.sendFile("/Html/Update.html");
+  res.sendFile(__dirname + "/Html/Update.html");
 });
 
 // Update Password
 app.get("/UpdatePassword", function (req, res) {
-  res.sendFile("/Html/UpdatePassword.html");
+  res.sendFile(__dirname + "/Html/UpdatePassword.html");
 });
 
 // Delete the data
 app.get("/Delete", function (req, res) {
-  res.sendFile(+ "/Html/Delete.html");
+  res.sendFile(__dirname + "/Html/Delete.html");
 });
 
 
