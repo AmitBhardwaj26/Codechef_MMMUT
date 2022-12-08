@@ -67,7 +67,7 @@ const user = new usermodel({
 
 //requests
 app.get("/", async function (req, res) {
-  res.sendFile("/Html/Verificationhome.html");
+  res.sendFile(__dirname + "/Html/Verificationhome.html");
 });
 
 app.get("/AdminLogin", function (req, res) {
