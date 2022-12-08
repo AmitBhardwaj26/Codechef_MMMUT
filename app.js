@@ -5,7 +5,7 @@ const https = require("https");
 const app = express();
 app.use('/css', express.static("css"));
 // app.use(express.static("css"));
-
+app.use(express.static('Html'));
 //ejs
 app.set('view engine','ejs');
 
@@ -67,34 +67,34 @@ const user = new usermodel({
 
 //requests
 app.get("/", async function (req, res) {
-  res.sendFile(__dirname + "/Html/Verificationhome.html");
+  res.sendFile("/Html/Verificationhome.html");
 });
 
 app.get("/AdminLogin", function (req, res) {
-  res.sendFile(__dirname + "/Html/AdminLogin.html");
+  res.sendFile("/Html/AdminLogin.html");
 });
 
 app.get("/VerificationusingRollno", async function (req, res) {
-  res.sendFile(__dirname + "/Html/VerificationusingRollno.html");
+  res.sendFile("/Html/VerificationusingRollno.html");
 });
 
 app.get("/Add", function (req, res) {
-  res.sendFile(__dirname + "/Html/Add.html");
+  res.sendFile("/Html/Add.html");
 });
 
 // Update the data
 app.get("/Update", function (req, res) {
-  res.sendFile(__dirname + "/Html/Update.html");
+  res.sendFile("/Html/Update.html");
 });
 
 // Update Password
 app.get("/UpdatePassword", function (req, res) {
-  res.sendFile(__dirname + "/Html/UpdatePassword.html");
+  res.sendFile("/Html/UpdatePassword.html");
 });
 
 // Delete the data
 app.get("/Delete", function (req, res) {
-  res.sendFile(__dirname + "/Html/Delete.html");
+  res.sendFile(+ "/Html/Delete.html");
 });
 
 
