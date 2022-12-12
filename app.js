@@ -1,11 +1,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const https = require("https");
+const path = require('path');
+const dotenv = require('dotenv'); 
+dotenv.config(); 
 
 const app = express();
 app.use('/css', express.static("css"));
 // app.use(express.static("css"));
-app.use(express.static('Html'));
+app.use('/Html',express.static('Html'));
+
 //ejs
 app.set('view engine','ejs');
 
@@ -18,9 +22,10 @@ const { default: mongoose } = require("mongoose");
 // mongoose.connect("mongodb://localhost:27017/Codechef1",{useNewUrlParser:true});
 const dbConnection = () => {
   try {
-    mongoose.connect("mongodb+srv://Codehef:amit9140@cluster0.hphjaf9.mongodb.net/", {
+    mongoose.connect(process.env.MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+    
     });
     console.log("successfully connected");
   } catch (err) {
@@ -65,9 +70,14 @@ const user = new usermodel({
 //end of database
 
 
+// app.get('/*', function(req,res) {
+//   res.sendFile(path.join(__dirname + '/dist/YOURPROJECTNAME/index.html'));
+// });
+
 //requests
+app.use(express.static(__dirname + '/Html'));
 app.get("/", async function (req, res) {
-  res.sendFile(__dirname + "/Html/Verificationhome.html");
+  res.sendFile(__dirname + path.join("/Html/Verificationhome.html"));
 });
 
 app.get("/AdminLogin", function (req, res) {
