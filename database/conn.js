@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 mongoose.set('strictQuery', true); // for strictquery warning
 // connect with mongoose
 
-//mongodb+srv://Codehef:Codeamit9140@cluster0.hphjaf9.mongodb.net/
 const dotenv = require('dotenv'); 
 dotenv.config(); 
 
