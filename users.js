@@ -5,7 +5,7 @@ const usermodel=require("./models/students");
 
 require("./database/conn");
 
-// defining the router
+// defining the routers
 router.get("/", async function (req, res) {
   res.render("Verificationhome");
   });
