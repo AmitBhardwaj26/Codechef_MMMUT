@@ -54,6 +54,20 @@ Admins can easily verify the data of candidates without the need to remember the
 
 <img width="946" alt="image" src="https://github.com/AmitBhardwaj26/Codechef_MMMUT/assets/93838323/2241a7bb-f0d3-452f-b388-de7326eb5cee">
 
+## Tech Stack
+The project is built using the following technologies:
+<ul>
+  <li> HTML </li>
+  <li> CSS </li>
+  <li> Bootstrap </li>
+  <li> JavaScript  </li>
+  <li> Node.js </li>
+  <li> Express.js </li>
+  <li>Handlebars  </li>
+  <li> MongoDB  </li>
+</ul>
+
+=> Hosted on Render
 
 ## Project Learning
 
