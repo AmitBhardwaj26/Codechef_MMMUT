@@ -4,7 +4,7 @@ CodeChef MMMUT Chapter Backend - Certificate Verification
 
 ## Description
 
-Hello, viewers! My name is Amit Bhardwaj, and I would like to present one of my projects used as a backend for the CodeChef MMMUT Chapter. This project focuses on certificate verification using a 94-bit hexadecimal unique code and includes an admin login feature for added security.
+Hello, viewers! My name is Amit Bhardwaj, and I would like to present one of my projects used as a backend for the CodeChef MMMUT Chapter. This project focuses on certificate verification using a 96-bit hexadecimal unique code and includes an admin login feature for added security.
 
 ![Certificate Verification View](https://github.com/AmitBhardwaj26/Codechef_MMMUT/assets/93838323/c993839f-5198-402a-9f2e-3b4a12e7ef7a) 
 
