@@ -10,7 +10,7 @@ fetch("https://www.kontests.net/api/v1/codeforces")
 
 //JS for Date and Time
 
-// Javascript for analog date and time
+// Javascript for analog date and time --amit
 window.onload = setInterval(clock, 1000);
 
 function clock() {
