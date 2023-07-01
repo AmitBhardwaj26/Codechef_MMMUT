@@ -29,11 +29,5 @@ const userschema = new mongoose.Schema({
 const usermodel = mongoose.model("user", userschema);
 module.exports=usermodel;   
 
-//creating a new document/ type
-// const user = new usermodel({
-//     name: "Amit Bhardwaj",
-//     batch: "2020-24",
-//     role: "vice President",
-//   });
-//end of database
+
   
