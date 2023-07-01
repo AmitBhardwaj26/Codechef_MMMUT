@@ -13,7 +13,7 @@ const partials_path=path.join(__dirname,"/templates/partials");
 
 app.set("view engine","hbs");   //hbs
 app.set("views",template_path); 
-hbs.registerPartials(partials_path); //register the partials 
+hbs.registerPartials(partials_path); //register the partials call
 
 app.use('/css', express.static("css"));
 app.use(bodyParser.urlencoded({ extended: true }));  //body parser
