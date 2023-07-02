@@ -1,6 +1,6 @@
 # Project Name
 
-CodeChef MMMUT Chapter Backend - Certificate Verification
+Certificate Key Verification and Management Software 
 
 
 ## Video Presentation
