@@ -2,13 +2,18 @@
 
 CodeChef MMMUT Chapter Backend - Certificate Verification
 
+
+## Video Presentation
+
+To gain a better understanding of the project, you can watch the video presentation at the following link: [Project Video](https://youtu.be/bKZWDOBy1MI)
+
 ## Description
 
 Hello, viewers! My name is Amit Bhardwaj, and I would like to present one of my projects used as a backend for the CodeChef MMMUT Chapter. This project focuses on certificate verification using a 96-bit hexadecimal unique code and includes an admin login feature for added security.
 
 ![Certificate Verification View](https://github.com/AmitBhardwaj26/Codechef_MMMUT/assets/93838323/c993839f-5198-402a-9f2e-3b4a12e7ef7a) 
 
-The main purpose of this project is to streamline the process of verifying certificates issued by the CodeChef MMMUT Chapter. By utilizing a 94-bit unique hexadecimal code, candidates' certificates can be easily validated.
+The main purpose of this project is to streamline the process of verifying certificates issued by the CodeChef MMMUT Chapter. By utilizing a 96-bit unique hexadecimal code, candidates' certificates can be easily validated.
 
 ## Admin Login
 
@@ -77,8 +82,5 @@ Throughout the development of this project, I gained valuable insights and exper
 2. **Time Constraint:** Completing the project on schedule was crucial, as we aimed to publish the website on a specific date. This taught me the importance of meeting deadlines.
 3. **Continuous Feedback:** Emphasizing feedback as a learning experience was pivotal in improving the project's quality. I embraced feedback and used it to enhance my skills and deliver a better end product.
 
-## Video Presentation
-
-To gain a better understanding of the project, you can watch the video presentation at the following link: [Project Video](http://youtube/sdcd.com)
 
 Thank you for Reading my project. I am excited to discuss it further and showcase my skills.
