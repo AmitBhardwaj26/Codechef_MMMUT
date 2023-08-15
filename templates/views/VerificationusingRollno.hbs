@@ -38,13 +38,14 @@
                     </div>
                     
                 </div>
-                    <div class="col-md-12">
-                        <div class="text-center">
-                            <button type="submit" class="btn bg-primary">GO</button>
-                        </div>
-
+                    
+              <div class="col-md-12">
+                    <div style="display:flex; align-items:center; justify-content: space-between;">
+                        <button type="button" class="btn btn bg-primary my-3" onclick="logout()">Logout</button>
+                        <button type="submit" class="btn bg-primary text-right">Submit</button>
                     </div>
-                </div>
+             </div>
+
 
             </form>
 
@@ -53,6 +54,26 @@
 
   {{!-- footer using hbs --}}
   {{>footer}}
+
+  
+{{!-- <script>
+function logout() {
+  fetch("/logout", {
+    method: "POST",
+  })
+  .then(response => {
+    if (response.ok) {
+      // Redirect to login page or perform other actions
+      window.location.href = "/";
+    } else {
+      console.error("Logout failed");
+    }
+  })
+  .catch(error => {
+    console.error("Logout error:", error);
+  });
+}
+</script> --}}
 
 </body>
 

@@ -32,13 +32,17 @@
 
                 <div class="col-md-12 mb-4">
                   <!-- Subject -->
-                  <input type="password" id="Password" class="form-control" placeholder="Admin-Password"
-                    name="Password">
+                  <input type="password" id="password" class="form-control" placeholder="Admin-password"
+                    name="password">
                 </div>
               </div>
-              <div class="text-center">
-                <button type="submit" class="btn bg-primary">Go</button>
-              </div>
+                 <div class="col-md-12">
+                    <div style="display:flex; align-items:center; justify-content: space-between;">
+                        <button type="button" class="btn btn bg-primary my-3" onclick="logout()">Logout</button>
+                        <button type="submit" class="btn bg-primary text-right">Submit</button>
+                    </div>
+                </div>
+
             </form>
 
         </section>
