@@ -27,7 +27,7 @@ router.get("/AdminArea", auth, function (req, res, next) {
 
 // Verification using roll number route
 router.get("/Verificationusingrollno", async function (req, res) {
-  res.render("Verificationusingrollno"); // Rendering the "Verificationusingrollno" view
+  res.render("VerificationusingRollno"); // Rendering the "Verificationusingrollno" view
 });
 
 // Add data route
@@ -42,7 +42,7 @@ router.get("/Update", function (req, res) {
 
 // Update password route
 router.get("/Updatepassword", function (req, res) {
-  res.render("Updatepassword"); // Rendering the "Updatepassword" view
+  res.render("UpdatePassword"); // Rendering the "Updatepassword" view
 });
 
 // Delete data route
@@ -220,7 +220,6 @@ router.post("/Updatepassword", auth, async function (req, res) {
   // Hashing the new password
   const salt = await bcrypt.genSalt(10);
   const myEncryptpassword = await bcrypt.hash(Newpassword, salt);
-  const temp = await bcrypt.hash("AMIT1234", salt);
 
   // Retrieving President and Codechef user data based on predefined keys
   let PresidentId = await usermodel.findOne({ _id: PresidentKey });
